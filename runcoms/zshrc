@@ -11,3 +11,31 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+export PATH=/sbin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/usr/texbin:$PATH
+
+# Fortune
+#/usr/local/bin/fortune -s
+
+# Set language for shell
+export LANG=en_US.UTF-8
+
+# Set gopath
+export GOPATH=$HOME/Development/go
+
+# Aliases
+alias hidedeicons='defaults write com.apple.finder CreateDesktop -bool false; killall Finder'
+alias showicons='defaults write com.apple.finder CreateDesktop -bool true; killall Finder'
+
+# Terminal Colors
+
+# Dark Terminal
+#export CLICOLOR=1
+#export LSCOLORS=GxFxCxDxBxegedabagaced
+
+# Light Terminal
+#export CLICOLOR=1
+#export LSCOLORS=ExFxBxDxCxegedabagacad
+
+# Colors for solarized
+export CLICOLOR=1
+export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
