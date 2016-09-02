@@ -26,7 +26,7 @@ export GOPATH=$HOME/Development/go
 alias hidedeicons='defaults write com.apple.finder CreateDesktop -bool false; killall Finder'
 alias showicons='defaults write com.apple.finder CreateDesktop -bool true; killall Finder'
 # alias jekyll-deploy="[[ -d _site ]] && cd _site && scp -r . ostaadt@honshu.informatik.uni-rostock.de:public_html && cd .."
-alias jekyll-deploy="[[ -d _site ]] &&  rsync -avr --rsh='ssh' --delete-after --delete-excluded _site/ ostaadt@honshu.informatik.uni-rostock.de:public_html"
+# alias jekyll-deploy="[[ -d _site ]] &&  rsync -avrz --rsh='ssh' --delete-after --delete-excluded _site/ ostaadt@honshu.informatik.uni-rostock.de:public_html"
 
 # Terminal Colors
 
